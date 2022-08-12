@@ -1,4 +1,4 @@
-### Single Cycle CPU
+### Single Cycle CPU 1
 
 ####  DataPath Modules
 
@@ -103,7 +103,7 @@ There are 7 signal lines  in total, including the ALUOp signal discussed above. 
 
  The whole complete data-path control. Main control unit outputs 7 signals using the 7-bit opcode from instruction code, only ALUOp requires 2 bits rest of them are all 1-bit signal. Note that, the PCSrc signal is derived by the AND operation of Branch and ALU zero output signal, where the PCSrc name is dropped for simplicity.
 
-#### Mapping Control Logic to Hardware
+
 
 
 
