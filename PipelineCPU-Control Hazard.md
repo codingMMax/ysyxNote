@@ -2,7 +2,7 @@
 
 In the pipeline design, every clock cycle the IF will fetch an instruction from memory. However, the branch instruction cannot proceed to instruction fetch until the MEM stage, and the branch result can conflict the default instruction location. This is called **Control Hazard**
 
-<img src="/Users/max/Desktop/ysyxNote/img1/control-hazard-instructions.png" alt="control-hazard-instructions" style="zoom:50%;" />
+<img src="img1/control-hazard-instructions.png" alt="control-hazard-instructions" style="zoom:50%;" />
 
 Shown above, the *beq* branch result is not computed until the MEM stage, while the IM stage will fetch the instruction by default. The branched address should be the 0x72 place, while the default updated instruction address is 0x44. This conflict lead to severe mistakes.
 
